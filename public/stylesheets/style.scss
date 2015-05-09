@@ -1,0 +1,53 @@
+$white: #fff;
+$pink: rgba(253, 10, 53, .5);
+
+
+body {    
+    font-family: monospace;
+    color: $white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background: url("../images/kiki.gif") no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -oz-background-size: cover;
+}
+
+header {
+    width: 50%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 5em;
+    text-shadow: 2px 0 0 $pink;
+}
+
+a {
+    display: block;
+    background-color: rgba(255, 255, 255, .85);
+    color: $pink;
+    font-family: monospace;
+    text-align: center;
+    text-decoration: none;
+    padding: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    transition: background-color .3s linear;
+    -webkit-transition: background-color .3s linear;
+    -moz-transition: background-color .3s linear;
+    box-shadow:
+    0.3em 0 0 0 $pink,
+    -0.3em 0 0 0 $pink,
+    0 0.3em 0 0 $pink,
+    0 -0.3em 0 0 $pink;
+    margin-top: 50%; // I know this is gross!! it's a hackathon... 
+
+    &:hover {
+	background-color: $white;
+    }
+}
